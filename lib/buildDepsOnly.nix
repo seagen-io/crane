@@ -61,7 +61,6 @@ mkCargoDerivation (
     pname = args.pname or crateName.pname;
     version = args.version or crateName.version;
 
-    cargoArtifacts = null;
     cargoVendorDir = args.cargoVendorDir or (vendorCargoDeps argsMaybeDummySrcOverride);
 
     env = (args.env or { }) // {
